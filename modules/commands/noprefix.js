@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, args, Threads }) {
   const time = moment.tz("Asia/Ho_Chi_minh").format("HH:MM:ss L");
   var idgr = `${event.threadID}`;
 
-  var tl = ["chào bạn tôi là bot của Đức", "bạn gọi tôi có việc gì?", "tôi yêu bạn vai lon", "Yêu em <3", "Hi, chào con vợ bé:3", "Vợ gọi có việc gì không?", "Sử dụng callad để liên lạc với admin!"];
+  var tl = ["chào bạn tôi là bot của Mạnh", "bạn gọi tôi có việc gì?", "tôi yêu bạn vai lon", "Yêu em <3", "Hi, chào con vợ bé:3", "Vợ gọi có việc gì không?", "Sử dụng callad để liên lạc với admin!"];
   var rand = tl[Math.floor(Math.random() * tl.length)];
 
   if ((event.body.toLowerCase() == "bot ngu")) {
@@ -29,7 +29,7 @@ module.exports.handleEvent = function({ api, event, args, Threads }) {
     return api.sendMessage("haha cc cười đầu buồi địt mẹ m😏", threadID);
   };
 
-  if ((event.body.toLowerCase() == "@Đức") || (event.body.toLowerCase() == "@Đức")) {
+  if ((event.body.toLowerCase() == "Mạnh") || (event.body.toLowerCase() == "Mạnh")) {
     return api.sendMessage("Admin t đi đá phò r gọi cc\nBt dùng callad ko ngu wa' chắc yêu admin bot r😏", threadID);
   };
 

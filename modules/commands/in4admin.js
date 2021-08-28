@@ -17,16 +17,16 @@ module.exports.config = {
 module.exports.run = async({api,event,args,Users,global,Currencies}) => {
 var callback = () => api.sendMessage(
   {body:`梁ADMIN BOT梁\n
-  \n👀 Tên: Đức (Duck)
-  \n❎ Tuổi: 15
+  \n👀 Tên: Trần Trọng Mạnh
+  \n❎ Tuổi: 17
   \n👤 😶 Giới tính: Nam
-  \n💫 Chiều cao cân nặng: 1m6 43kg
+  \n💫 Chiều cao cân nặng: 1m65 45kg
   \n💘 Mối quan hệ: Độc thân
-  \n😎 Quê quán: An Phong
-  \n🤔 Nơi ở: Đồng Tháp
-  \n👫 Gu: Giọng nói :<
-  \n🌸 Tính cách: Là một con người Fboiz nhưng khi yêu xong rất là tềnh cảm :3
-  Facebook : https://www.facebook.com/Ducvjp.Admin.2006`,
+  \n😎 Quê quán: Nghệ An 
+  \n🤔 Nơi ở: Đại Đồng Thanh Chương Nghệ An
+  \n👫 Gu: Thích mình là được 😐
+  \n🌸 Tính cách: Là một con người nhạt nhẽo nhưng lại mang một trái tim chân thành ❤
+  Facebook : https://www.facebook.com/ttm130`,
     attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
       return request(

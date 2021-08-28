@@ -45,7 +45,7 @@ module.exports.run = function({ api, event, args }) {
 			else group.find(item => item.group.toLowerCase() == commandConfig.config.commandCategory.toLowerCase()).cmds.push(commandConfig.config.name);
 		}
 		group.forEach(commandGroup => msg += `🃏${commandGroup.group.charAt(0).toUpperCase() + commandGroup.group.slice(1)} 🃏\n${commandGroup.cmds.join(', ')}\n\n`);
-		return api.sendMessage(msg + `🐸💦 Sử dụng: "${(threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX}help từng lệnh ở trên" để xem chi tiết cách sử dụng! | Hiện tại đang có ${commands.size} lệnh có thể sử dụng trên bot này.\nBot được điều hành bởi Ducvjp. \nMọi thắc mắc liên hệ Admin Bot \nFb : https://www.facebook.com/Ducvjp.Admin.2006\nZalo : 0337824707\nChúc bạn sử dụng bot vui vẻ ♥
+		return api.sendMessage(msg + `🐸💦 Sử dụng: "${(threadSetting.hasOwnProperty("PREFIX")) ? threadSetting.PREFIX : global.config.PREFIX}help từng lệnh ở trên" để xem chi tiết cách sử dụng! | Hiện tại đang có ${commands.size} lệnh có thể sử dụng trên bot này.\nBot được điều hành bởi Trần Trọng Mạnh. \nMọi thắc mắc liên hệ Admin Bot \nFb : https://www.facebook.com/ttm130\nZalo : 0385108224\nChúc bạn sử dụng bot vui vẻ ♥
 📣Help sẽ tự động gỡ sau 60s 🐸💦`, event.threadID , (err, info)  => setTimeout ( () => { api.unsendMessage(info.messageID) } , 60000))
 
 	}

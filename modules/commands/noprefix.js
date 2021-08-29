@@ -57,6 +57,10 @@ module.exports.handleEvent = function({ api, event, args, Threads }) {
     return api.sendMessage("Ngủ nhớ mơ thấy admin nha iuuuuuu❤️", threadID);
   };
 
+  if ((event.body.toLowerCase() == "ngủngon" || (event.body.toLowerCase() == "ngủngon")) {
+    return api.sendMessage("chúc ngủ ngon nhé 😽", threadID);
+  };
+
   if ((event.body.toLowerCase() == "hi") || (event.body.toLowerCase() == "Hi")) {
     return api.sendMessage("Chào bạn , chúc bạn 1 ngày mới tốt lành❤️", threadID);
   };

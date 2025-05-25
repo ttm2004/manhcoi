@@ -1,9 +1,6 @@
 
 (function enableEverything() {
-    const events = [
-        'contextmenu', 'keydown', 'keyup', 'keypress',
-        'mousedown', 'mouseup', 'copy', 'cut', 'paste'
-    ];
+    const events = ['contextmenu', 'keydown', 'keyup', 'keypress','mousedown', 'mouseup', 'copy', 'cut', 'paste'];
     const targets = [document, document.body, window];
     events.forEach(event => {
         targets.forEach(target => {
